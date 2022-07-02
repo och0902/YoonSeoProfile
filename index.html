@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <script defer src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+   <link rel="shortcut icon" type="image/x-icon" href="image/woman.png">
+   <title>YoonSeo Profile</title>
+</head>
+<body>
+
+   <div class="header">
+      <navbar>
+         <!-- <h1>YoonSeo</h1> -->
+         <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#MyWorks">My Works</a></li>
+            <!-- <li><a href="#Contact">Contact</a></li> -->
+         </ul>
+      </navbar>
+      <div class="text-box">
+         <p>I'M</p>
+         <h1>OH YoonSeo</h1>
+         <h3>I HAVE A DREAM OF BECOMING A GREAT ACTOR</h3>
+         <!-- <h3>저는 멋진 배우가 되는 꿈을 갖고 있습니다</h3> -->
+         <div class="row">
+            <!-- <a href="#About">Explore My Profile</a> -->
+            <!-- <a href="#Contact">Connect With Me <span>&#x27F6</span></a> -->
+            <a href="#About">You Can Explore More About My Profile And Works Here <span>&#x27F6</span></a>
+         </div>        
+      </div>
+      <div class="social-icons">
+         <!-- <a href=""><img src="image/dribble.png"></a>
+         <a href=""><img src="image/telegram.png"></a> -->
+         <a href="https://instagram.com/heureux___5?utm_medium=copy_link"><img src="image/instagram.png"></a>
+      </div>
+   </div>
+
+   <a name="About"></a>
+   <div class="about">
+      <h1>About OH YoonSeo</h1>
+      <p>안녕하세요. 1997년 3월생, 현재 25살인 <strong>오윤서</strong>입니다. 키는 172cm, 몸무게는 51Kg 입니다. 저의 특기는 현대무용, 수영, 골프, 영어, 피아노등이 있습니다.<br>
+         저는 초등학교 때 부터 배우의 꿈을 가지고, 중학교에서는 예고 입학을 목표로 연기 학원에서 2년의 연기 연습을 하였고, <strong>안양예술 고등학교 연극 영화과</strong>에 입학하여
+         초보 연기자로서의 역량을 키워 왔습니다. 이러한 노력의 바탕으로 <strong>서울 예술 대학교 연기과</strong>에 입학하여, 많은 실전적인 교육과 실습 연기를 통해 실질적인 연기자로서의 준비를 하였으며, 
+         지금은 어떠한 역할이 주어지더라도 잘 해 낼 수 있는 실력을 갖추었습니다.
+         제가 생각하는 저의 장점은 <strong>항상 최선을 다하는 것</strong>과,  <strong>항상 밝고 긍정적인 면을 소유하고 있다는 것</strong>이라고 생각합니다. 
+         경험과 실력에 있어서 준비된 연기자로서, 앞으로 한국을 넘어 세계적으로 <strong>위대한 연기자</strong>가 되고자 하는 <strong>꿈을 실현</strong>하고자 합니다. 많은 기대와 관심을 부탁드리겠습니다.<br><br>
+         저의 연락처는 <!-- 핸드폰 <a href="tel:010 - 9329 - 0323"><strong>010 - 9329 - 0323</strong></a>, --> 이메일 <a href="mailto:heureux97@naver.com"><strong>heureux97@naver.com</strong></a>,  
+         인스타그램 <a href="https://instagram.com/heureux___5?utm_medium=copy_link"><strong>heureux___5</strong></a> 입니다.
+      </p>
+
+      <div class="row">
+         <div class="col-1">
+            <div class="play-btn" onclick="var fileName='video/2021배우오윤서자기소개영상1.mp4'; playVideo1(fileName);">
+               <p>오윤서 자기소개</p>
+               <img src="image/play.png">
+            </div>
+            <div class="play-btn" onclick="var fileName='video/2021배우오윤서연기영상1.MOV'; playVideo1(fileName);">
+               <p>오윤서 자유연기영상</p>
+               <img src="image/play.png">
+            </div>
+         </div>
+         <div class="col-2">
+            <div class="play-btn" onclick="var fileName='video/배우오윤서무용영상.mp4'; playVideo1(fileName);">
+               <p>오윤서 무용영상</p>
+               <img src="image/play.png">
+            </div>
+            <div class="play-btn" onclick="var fileName='video/배우오윤서피아노연주영상.MOV'; playVideo1(fileName);">
+               <p>오윤서 파아노연주영상</p>
+               <img src="image/play.png">
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="video-player1" id="videoPlayer1">
+      <video width="100%" controls autoplay id="myVideo1" src="" type="video/mp4, video/mov"></video>
+      <img src="image/close.png" class="close-btn" onclick="stopVideo1();">
+   </div>
+
+   <div class="profile">
+      <div class="row">
+         <img src="image/yoonseo-p2.jpg">
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-p3.jpg">
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-p4.jpg">
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-p5.jpg">
+      </div>
+   </div>
+   <div class="profile">
+      <div class="row">
+         <img src="image/yoonseo-p6.jpg">
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-p7.jpg">
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-p8.jpg">
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-p9.jpg">
+      </div>
+   </div>
+
+   <a name="MyWorks"></a>
+   <div class="myworks">
+      <h1>My Works</h1>
+      <div class="row">
+         <div class="col-1"> 
+            <h3>영화</h3>
+            <p>2020년 디바 - 응급실 간호사 역</p>
+            <div class="play-btn" onclick="var fileName='video/2020배고픔의맛.mp4'; playVideo2(fileName);">
+               <p>2020년 배고픔의 맛 - 슬기 역</p>
+               <img src="image/play.png">
+            </div>
+            <div class="play-btn" onclick="var fileName='video/2020눈사람목도리범인찾기.mov'; playVideo2(fileName);">
+               <p>2020년 눈사람 목도리 범인찾기 - 하윤 역</p>
+               <img src="image/play.png">
+            </div>
+            <div class="play-btn" onclick="var fileName='video/SIWFF2020무화이와굄Trailer.mp4'; playVideo2(fileName);">
+               <p>2019년 무화, 이와, 굄 - 굄 역</p>
+               <img src="image/play.png">
+            </div>
+            <div class="play-btn" onclick="var fileName='video/GFSF2020무화이와굄배우GV코멘터리.mp4'; playVideo2(fileName);">
+               <p>무화,이와,굄 배우GV코멘터리</p>
+               <img src="image/play.png">
+            </div>
+            <p>2019년 심장에만 석류가 있었다 -  사사 역</p>
+            <div class="play-btn" onclick="var fileName='video/2017숙녀씨의정치학.mp4'; playVideo2(fileName);">
+               <p>2017년 숙녀씨의 정치학 -  숙녀씨 역</p>
+               <img src="image/play.png">
+            </div>
+            <div class="play-btn" onclick="var fileName='video/2017실리에대한모든것.mp4'; playVideo2(fileName);">
+               <p>2017년 실리에 대한 모든 것 - 실리 역</p>
+               <img src="image/play.png">
+            </div><br>
+            <h3>연극</h3>
+            <div class="play-btn" onclick="var fileName='video/2020이름없는물고기.mp4'; playVideo2(fileName);">
+               <p>2020년 이름 없는 물고기 - 현서 역</p>
+               <img src="image/play.png">
+            </div>
+            <p>2018년 연애하기 좋은 날 - 시연 역</p><br>            
+         </div>
+         <div class="col-2">
+            <h3>드라마</h3>
+            <p>2021년 그래서 나는 안티팬과 결혼했다 - 자매 역</p>
+            <div class="play-btn" onclick="var fileName='video/EP.8 위스키 _ 숙희의 오크통 [멜랑꽐라 로맨쓰] 웹드라마.mp4'; playVideo2(fileName);">
+               <p>2020년 알콜러버:멜랑꽐라로맨스 - 위숙희 역</p>
+               <img src="image/play.png">
+            </div>
+            <a href="https://www.youtube.com/channel/UC6VgfwtSocKcMG9ox9q3afQ/featured" target="_blank">YouTube 알콜러버 Site<img src="image/play.png"></a>
+            <p>2017년 TVN 크리미널 마인드 - 여경 역</p><br>
+            <h3>광고</h3>
+            <div class="play-btn" onclick="var fileName='video/국방부유해발굴감식단.mp4'; playVideo2(fileName);">
+               <p>2021년 국방부 유해발굴감식단 - 김혜수소위 역</p>
+               <img src="image/play.png">
+            </div>
+            <p>2021년 아토팜 광고 - 모델 역</p>
+            <div class="play-btn" onclick="var fileName='video/JBROS의류광고.mp4'; playVideo2(fileName);">
+               <p>2021년 JBROS 의류 광고 - 모델 역</p>
+               <img src="image/play.png">
+            </div>
+            <div class="play-btn" onclick="var fileName='video/BESMO인덕션광고.mp4'; playVideo2(fileName);">
+               <p>2021년 BESMO 인덕션 광고 - 여고생 역</p>
+               <img src="image/play.png">
+            </div>            
+            <p>2020년 위니아 딤채 광고 - 언니 역</p><br>
+            <h3>예능</h3>
+            <p>2021년 TVN 대탈출 시즌 4 - 소나 역</p>
+         </div>
+      </div>
+   </div>
+
+   <div class="video-player2" id="videoPlayer2">
+      <video width="100%" controls autoplay id="myVideo2" src="" type="video/mp4, video/mov"></video>
+      <img src="image/close.png" class="close-btn" onclick="stopVideo2();">
+   </div>
+
+   <script>
+      // var myVideo = document.getElementById("myVideo");
+      // var videoPlayer = document.getElementById("videoPlayer");
+
+      function playVideo1(fileName) {
+         document.getElementById("myVideo1").src = fileName;
+         document.getElementById("videoPlayer1").style.display = "block";
+      };
+      function stopVideo1() {
+         $("#myVideo1").get(0).pause(); 
+         document.getElementById("videoPlayer1").style.display = "none";
+      };
+
+      function playVideo2(fileName) {
+         document.getElementById("myVideo2").src = fileName;
+         document.getElementById("videoPlayer2").style.display = "block";
+      };
+      function stopVideo2() {
+         $("#myVideo2").get(0).pause(); 
+         document.getElementById("videoPlayer2").style.display = "none";  
+      };
+   </script>
+
+   <div class="galleries">      
+      <div class="row">
+         <img src="image/yoonseo-g1.jpg">
+         <p class="gallery-title">...</p>
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-g2.jpg">
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-g3.jpg">
+      </div>
+   </div>
+
+   <div class="galleries">
+      <div class="row">
+         <img src="image/yoonseo-g4.png">
+         <p class="gallery-title">배고픔의 맛</p>
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-g5.png">
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-g6.jpg">
+         <p class="gallery-title">BESMO 인덕션 광고</p>
+      </div>
+   </div>
+   
+   <div class="galleries">  
+      <div class="row">
+         <img src="image/yoonseo-g7.png">
+         <p class="gallery-title">눈사람 목도리 범인찾기</p>
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-g8.png">
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-g9.png">
+      </div>
+   </div>
+
+   <div class="galleries">
+      <div class="row">
+         <img src="image/yoonseo-g10.jpg">
+         <p class="gallery-title">무화, 이와, 굄</p>
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-g11.jpg">
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-g12.jpg">
+      </div>
+   </div>
+
+   <div class="galleries">
+      <div class="row">
+         <img src="image/yoonseo-g13.png">
+         <p class="gallery-title">실리에 대한 모든 것</p>
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-g14.png">
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-g15.png">
+      </div>
+   </div>
+
+   <div class="galleries">
+      <div class="row">
+         <img src="image/yoonseo-g16.png">
+         <p class="gallery-title">이름없는 물고기</p>
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-g17.png">
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-g18.png">
+      </div>
+   </div>
+
+   <div class="galleries">
+      <div class="row">
+         <img src="image/yoonseo-g19.jpg">
+         <p class="gallery-title">...</p>
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-g20.jpg">
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-g21.jpg">
+      </div>
+   </div>
+
+   <div class="galleries">  
+      <div class="row">
+         <img src="image/yoonseo-g22.png">
+         <p class="gallery-title">...</p>
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-g23.png">
+      </div>
+      <div class="row">
+         <img src="image/yoonseo-g24.png">
+      </div>
+   </div>
+
+   <div class="copyright">
+      <p>Copyright &copy; 2022 YStory52. All Rights Reserved.</p>
+   </div>
+
+</body>
+</html>
